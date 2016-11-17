@@ -25,7 +25,7 @@
         die ("Error: " . $e->getMessage());
       }
       
-      $consulta = $conexion->query("SELECT codigo, nombre, raza, fecha,dueño,telefono,correo FROM perros");
+      $consulta = $conexion->query("SELECT codigo, nombre, raza, fecha, dueño FROM perros");
          
       ?>
       <table  class="table table-striped">
@@ -36,8 +36,6 @@
         <td><b>Raza del perro</b></td>
         <td><b>Fecha de ingreso</b></td>
         <td><b>Nombre del dueño</b></td>
-        <td><b>Teléfono dueño</b></td>
-        <td><b>Correo electrónico</b></td>
       </tr>
 
       <?php
@@ -50,8 +48,6 @@
           <td><?= $perros->raza ?></td>
           <td><?= $perros->fecha ?></td>
           <td><?= $perros->dueño ?></td>
-          <td><?= $perros->telefono ?></td>
-          <td><?= $perros->correo ?></td>
         </tr>
         <?php              
       }
