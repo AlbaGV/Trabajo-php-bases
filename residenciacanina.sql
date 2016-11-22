@@ -37,7 +37,6 @@ CREATE TABLE `pass` (
 
 INSERT INTO `pass` (`usuario`, `password`) VALUES
 ('ciux', 'bleach69'),
-('zombie_wolf', 'jester69');
 
 -- --------------------------------------------------------
 
